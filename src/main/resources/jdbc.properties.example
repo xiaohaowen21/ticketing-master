@@ -1,0 +1,5 @@
+# 复制本文件为 jdbc.properties 后再按本机环境修改
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/ticketing?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8&allowPublicKeyRetrieval=true
+jdbc.user=root
+jdbc.password=your_password

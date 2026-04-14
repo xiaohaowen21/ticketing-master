@@ -1,0 +1,38 @@
+# IDE
+.idea/
+.settings/
+.classpath
+.project
+*.iml
+
+# Build output
+target/
+build/
+bin/
+out/
+*.war
+*.class
+
+# Local configuration
+src/main/resources/jdbc.properties
+
+# Logs
+*.log
+src/log/
+src/main/resources/log/
+
+# Temporary files
+single_source.txt
+sources.txt
+subset.txt
+temp.hex
+
+# Local helper docs/scripts
+IDEA运行步骤.md
+运行指南.md
+一键启动.bat
+run.sh
+
+# OS files
+.DS_Store
+Thumbs.db
