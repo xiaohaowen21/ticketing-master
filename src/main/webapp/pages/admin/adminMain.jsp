@@ -165,7 +165,7 @@ function myselfinfo(){
 		maxmin: true,
 		shade:0.4,
 		title: '我的信息',
-		content: 'ID：${sessionScope.admin.adminId}<br/>用户名：${sessionScope.admin.userName}<br/>密码：${sessionScope.admin.password}<br/>注册时间：${sessionScope.admin.creatTime}<br/>权限代码：${sessionScope.admin.flag}<br/>登录时间：${sessionScope.admin.loginTime}<br/>'
+		content: 'ID：${sessionScope.admin.adminId}<br/>用户名：${sessionScope.admin.userName}<br/>注册时间：${sessionScope.admin.creatTime}<br/>权限代码：${sessionScope.admin.flag}<br/>登录时间：${sessionScope.admin.loginTime}<br/>'
 		
 	});
 }
