@@ -36,6 +36,34 @@
     <filter-name>EncodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <filter>
+    <display-name>AdminAuthFilter</display-name>
+    <filter-name>AdminAuthFilter</filter-name>
+    <filter-class>com.cn.filter.AdminAuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AdminAuthFilter</filter-name>
+    <url-pattern>/pages/admin/*</url-pattern>
+    <url-pattern>/AddTrainServlet</url-pattern>
+    <url-pattern>/GetAllTrainServlet</url-pattern>
+    <url-pattern>/UpdateTrainServlet</url-pattern>
+    <url-pattern>/DeleteTrainServlet</url-pattern>
+    <url-pattern>/GetAllPrepServlet</url-pattern>
+    <url-pattern>/MemberCenterServlet</url-pattern>
+    <url-pattern>/GetPmemberByPmemberIdServlet</url-pattern>
+    <url-pattern>/DeletePrepAmdinServlet</url-pattern>
+    <url-pattern>/UpdatePrepAdminServlet</url-pattern>
+    <url-pattern>/DeleteMemberAdminServlet</url-pattern>
+    <url-pattern>/UpdateMemberAdminServlet</url-pattern>
+    <url-pattern>/GetAdminByUserName</url-pattern>
+    <url-pattern>/UpdateAdminPassword</url-pattern>
+    <url-pattern>/UpdatePmemberAdminServlet</url-pattern>
+    <url-pattern>/AddMemberServlet</url-pattern>
+    <url-pattern>/AddAdminServlet</url-pattern>
+    <url-pattern>/CountPrepServlet</url-pattern>
+    <url-pattern>/GetAllAdminServlet</url-pattern>
+    <url-pattern>/ExportExcelServlet</url-pattern>
+  </filter-mapping>
   <servlet>
     <description></description>
     <display-name>GetByStartEndStationServlet</display-name>

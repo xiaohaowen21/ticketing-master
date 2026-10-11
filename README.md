@@ -197,3 +197,10 @@ ticketing-master
 ## 说明
 
 这是一个课程实验风格的 Java Web 项目，代码整体保留了传统 JSP/Servlet 的写法，适合作为学习和练手项目使用。
+
+## 安全配置说明
+
+- 支付宝密钥不再写在源码中。启用支付前请设置环境变量 `ALIPAY_APP_ID`、`ALIPAY_APP_PRIVATE_KEY`、`ALIPAY_PUBLIC_KEY`（或用 `-D` 传入同名 JVM 参数）。旧密钥仍留在 Git 历史里，如果它是你自己的应用，请到支付宝开放平台重新生成。
+- 后台页面 `/pages/admin/*` 和后台 Servlet 由 `AdminAuthFilter` 保护，未以管理员登录会跳回登录页。
+- 依赖统一由 Maven 管理，`WEB-INF/lib` 只保留无法从中央仓库获取的支付宝 SDK。
+- 待办：数据库中的密码仍是明文，示例数据自带 `admin / 123456`。上线前请改密码，并把 `password` 字段扩到 60 位以上后改用 BCrypt。
